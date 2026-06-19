@@ -20,6 +20,14 @@ def test_code_delimiter(self):
     ])
 
 
+def test_invalid_markdown(self):
+    node = TextNode("This is `unclosed", TextType.TEXT)
+    with self.assertRaises(ValueError):
+        split_nodes_delimiter([node], "`", TextType.CODE)
+
+
+        
+
 
 
 
