@@ -1,0 +1,21 @@
+import unittest
+from src.gencontent import extract_title
+
+class TestExtract(unittest.TestCase):
+    def test_extract_title(self):
+        markdown = extract_title("# blahablalaa")
+        self.assertEqual(markdown, "blahablalaa")
+
+    def test_extract_no_heading(self):
+        with self.assertRaises(Exception):
+            extract_title(" blahablalaa")
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    unittest.main()
