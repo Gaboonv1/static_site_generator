@@ -119,7 +119,7 @@ def block_to_html_node(block):
         return code_to_html_node(block)
     if block_type == BlockType.QUOTE:
         return quote_to_html_node(block)
-    if block_type == BlockType.UNLIST:
+    if block_type == BlockType.ULIST:
         return ulist_to_html_node(block)
     if block_type == BlockType.OLIST:
         return olist_to_html_node(block)
