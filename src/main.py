@@ -9,8 +9,8 @@ def main():
     else: 
         basepath = "/"     
 
-    sync("static", "public")
-    generate_pages_recursive("content","template.html", "public", basepath)
+    sync("static", "docs")
+    generate_pages_recursive("content","template.html", "docs", basepath)
 
 main()
 
