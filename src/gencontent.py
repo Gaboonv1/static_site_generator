@@ -26,6 +26,10 @@ def generate_page(from_path, template_path, dest_path):
     template_content = template_content.replace("{{ Content }}", html)
     dest_dir = os.path.dirname(dest_path)
     os.makedirs(dest_dir, exist_ok=True)
+<<<<<<< HEAD
     dest_file = open(dest_path,"w")
+=======
+    dest_file = open(dest_dir,"w")
+>>>>>>> e5a6b741a9e0b071b2c68446570695801dbc36bb
     dest_file.write(template_content)
     dest_file.close()
