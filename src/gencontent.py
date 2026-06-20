@@ -1,5 +1,5 @@
-from src.markdown_blocks import markdown_to_html_node 
-from src.htmlnode import HTMLNode
+from markdown_blocks import markdown_to_html_node 
+from htmlnode import HTMLNode
 import os
 
 def extract_title( markdown):

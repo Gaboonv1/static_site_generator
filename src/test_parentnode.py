@@ -1,5 +1,5 @@
 import unittest
-from src.htmlnode import ParentNode, LeafNode
+from htmlnode import ParentNode, LeafNode
 
 def test_to_html_with_children(self):
     child_node = LeafNode("span", "child")

@@ -1,8 +1,8 @@
 import unittest
-from src.markdown_blocks import markdown_to_blocks, BlockType, block_to_block_type, text_to_children, paragraph_to_html_node, heading_to_html_node, code_to_html_node, quote_to_html_node, ulist_to_html_node, olist_to_html_node, markdown_to_html_node, block_to_html_node
-from src.htmlnode import HTMLNode, LeafNode, ParentNode
-from src.textnode import TextNode, text_node_to_html_node, TextType
-from src.splitnode import text_to_textnodes
+from markdown_blocks import markdown_to_blocks, BlockType, block_to_block_type, text_to_children, paragraph_to_html_node, heading_to_html_node, code_to_html_node, quote_to_html_node, ulist_to_html_node, olist_to_html_node, markdown_to_html_node, block_to_html_node
+from htmlnode import HTMLNode, LeafNode, ParentNode
+from textnode import TextNode, text_node_to_html_node, TextType
+from splitnode import text_to_textnodes
 
 def test_markdown_to_blocks(self):
         md = """

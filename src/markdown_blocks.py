@@ -1,7 +1,7 @@
 from enum import Enum
-from src.htmlnode import HTMLNode, LeafNode, ParentNode
-from src.textnode import TextNode, text_node_to_html_node, TextType
-from src.splitnode import text_to_textnodes
+from htmlnode import HTMLNode, LeafNode, ParentNode
+from textnode import TextNode, text_node_to_html_node, TextType
+from splitnode import text_to_textnodes
 
 def markdown_to_blocks(markdown):
     cleaned_blocks = []

@@ -1,6 +1,6 @@
-from src.textnode import TextNode, TextType
-from src.copy_static import sync
-from src.gencontent import extract_title, generate_page
+from textnode import TextNode, TextType
+from copy_static import sync
+from gencontent import generate_page
 
 def main():
     sync("static", "public")
